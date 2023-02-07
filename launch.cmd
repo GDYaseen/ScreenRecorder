@@ -1,0 +1,1 @@
+"Path of a browser here, inside quotes" --app="Path of the index.html inside this directory, inside quotes" --private --window-size="800,800" --disable-fullscreen & node nodeSide.js

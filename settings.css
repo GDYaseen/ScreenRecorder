@@ -1,0 +1,27 @@
+.set>div>input[type="number"]{
+    width: 50px;
+    height: 20px;
+    background-color:rgb(15,15,15);
+    border: 1px solid rgb(33, 35, 69);
+    border-radius: 5px;
+    color: white;
+    
+}
+.set>div>span{
+    color: rgb(43, 213, 117);
+}
+#save{
+    display: block;
+    font-family: montserrat;
+    background-color: rgb(15,15,15);
+    border-radius: 15px;
+    height: 34px;
+    justify-self: right;
+    margin-right: 80px;
+    border: 2px solid rgb(83, 75, 138);
+    transition: background-color 0.3s;
+    width: 80px;
+}
+#save:hover{
+    background-color: rgb(83, 75, 138);
+}

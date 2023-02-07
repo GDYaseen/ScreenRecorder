@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="settings.css">
+    <title>Recorder</title>
+</head>
+<body oncontextmenu="return false;">
+    <aside>
+      <label class="labels" for="recordAside">
+        <input hidden checked type="radio" id="recordAside" name="section">
+        Recording
+      </label>
+      <label class="labels" for="settingsAside">
+        <input hidden type="radio" id="settingsAside" name="section">
+        Settings
+      </label>
+    </aside>
+    <section>
+      <h1>Recording</h1>
+      <div id="recordSection">
+        <video muted width="320" height="180" src=""></video>
+        <div id="buttons">
+          <button id="StartButton" onClick="startRecording()">Start recording</button>
+          <button id="StopButton" onClick="stopRecording()">Stop recording</button>
+        </div>
+      </div>
+      <div id="settingsSection">
+        <div class="set">
+            <h3>Video</h3>
+            <div> Resolution <span>:</span> <input type="number" name="" id="resX"> x <input type="number" name="" id="resY"></div>
+            <div> Max Framerate <span>:</span> <input type="number" name="" id="fps"> fps</div>
+        </div>
+        
+        <div class="set">
+        <h3>Audio</h3>
+        <div> Echo cancellation <span>:</span> <input type="checkbox" name="" id="echo"></div>
+        <div> Sample Rate <span>:</span> <input type="number" name="" value="44100" id="sampleRate"></div>
+        </div>
+
+        <div class="set">
+        <h3>General</h3>
+        <div> Show video preview <span>:</span> <input type="checkbox" name="" id="preview"></div>
+        <div> Save to <span>:</span></div>
+        </div>
+        <button onClick="saveConstraints()" id="save">Save</button>
+      </div>
+      </section>
+      <script src="page.js"></script>
+      <script src="recorder.js"></script>
+</body>
+</html>
